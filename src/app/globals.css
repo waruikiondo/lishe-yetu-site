@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  /* Brand Colors */
+  --color-brand-dark: #1B3C1B;
+  --color-brand-cream: #F4F1EA;
+  --color-brand-olive: #8C926B;
+  
+  /* Standard Neutrals */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Typography */
+  --font-sans: 'Inter', ui-sans-serif, system-ui;
+  --font-display: 'Outfit', sans-serif;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #F4F1EA; /* Default to your brand cream */
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* We disable forced dark mode for now to keep the "Earth" brand consistent */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F4F1EA;
+    --foreground: #171717;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scrolling for anchor links (About, Mission, etc.) */
+html {
+  scroll-behavior: smooth;
 }
