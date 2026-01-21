@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <div className="relative h-12 w-12">
               <Image 
-                src="/logo.jpeg" 
+                src="/logo.png" 
                 alt="Lishe Yetu Logo" 
                 fill 
                 className="object-contain"
@@ -66,8 +66,7 @@ export default function Home() {
               Who We Are
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
-              LISHE YETU INITIATIVE is a community-based organisation in Kenya committed to transforming lives through nutrition, food safety, and sustainable food systems. We stand at the intersection of health, agriculture, and community development.
-            </p>
+            Lishe Yetu Initiative is a community-based organisation in Kenya committed to transforming lives through nutrition, food safety and sustainable food systems. We stand at the intersection of health, agriculture and community development.            </p>
             <p className="text-lg leading-relaxed text-gray-700 font-medium italic border-l-4 border-[#8C926B] pl-4 bg-white p-4 rounded-r-lg shadow-sm">
               "We envision communities where every individual, every family and every household enjoys nourishment and health through local, safe, nutritious food."
             </p>
@@ -157,7 +156,7 @@ export default function Home() {
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="relative h-10 w-10">
-                <Image src="/logo.jpeg" alt="Logo" fill className="object-contain" />
+                <Image src="/logo.png" alt="Logo" fill className="object-contain" />
               </div>
               <span className="font-black text-2xl text-[#1B3C1B]">LISHE YETU</span>
             </div>
