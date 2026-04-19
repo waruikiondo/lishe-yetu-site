@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <div className="relative h-12 w-12">
               <Image 
-                src="/logo.png" 
+                src="/logo1.jpeg" 
                 alt="Lishe Yetu Logo" 
                 fill 
                 className="object-contain"
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="relative h-10 w-10">
-                <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+                <Image src="/logo1.jpeg" alt="Logo" fill className="object-contain" />
               </div>
               <span className="font-black text-2xl text-[#1B3C1B]">LISHE YETU</span>
             </div>
