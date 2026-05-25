@@ -66,7 +66,8 @@ export default function Home() {
               Who We Are
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
-            Lishe Yetu Initiative is a community-based organisation in Kenya committed to transforming lives through nutrition, food safety and sustainable food systems. We stand at the intersection of health, agriculture and community development.            </p>
+              Lishe Yetu Initiative is a community-based organisation in Kenya committed to transforming lives through nutrition, food safety and sustainable food systems. We stand at the intersection of health, agriculture and community development.
+            </p>
             <p className="text-lg leading-relaxed text-gray-700 font-medium italic border-l-4 border-[#8C926B] pl-4 bg-white p-4 rounded-r-lg shadow-sm">
               "We envision communities where every individual, every family and every household enjoys nourishment and health through local, safe, nutritious food."
             </p>
@@ -98,8 +99,15 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
             
             {/* Program 1 */}
-            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition duration-300">🍲</div>
+            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
+              <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" 
+                  alt="Medically Tailored Meals" 
+                  fill 
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Medically Tailored Meals</h3>
               <p className="text-gray-300 leading-relaxed">
                 We partner with health facilities to provide meals and food support for individuals facing illness, malnutrition, or other health challenges.
@@ -107,8 +115,15 @@ export default function Home() {
             </div>
 
             {/* Program 2 */}
-            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition duration-300">🧼</div>
+            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
+              <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1556910103-1c02745a872f?q=80&w=800&auto=format&fit=crop" 
+                  alt="Food Safety & Education" 
+                  fill 
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Food Safety & Education</h3>
               <p className="text-gray-300 leading-relaxed">
                 Through outreach and training, we teach safe food handling, hygiene practices, and contamination prevention in homes, schools, and markets.
@@ -116,8 +131,15 @@ export default function Home() {
             </div>
 
             {/* Program 3 */}
-            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition duration-300">🌱</div>
+            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
+              <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?q=80&w=800&auto=format&fit=crop" 
+                  alt="Livelihoods & Value-Addition" 
+                  fill 
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Livelihoods & Value-Addition</h3>
               <p className="text-gray-300 leading-relaxed">
                 We support community members—especially women and youth—to add value to local food (packaging, marketing) and create income opportunities.
@@ -125,12 +147,61 @@ export default function Home() {
             </div>
 
             {/* Program 4 */}
-            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition duration-300">🤝</div>
+            <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
+              <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
+                <Image 
+                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=800&auto=format&fit=crop" 
+                  alt="Partnerships & Advocacy" 
+                  fill 
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Partnerships & Advocacy</h3>
               <p className="text-gray-300 leading-relaxed">
                 Collaborating with local government and NGOs to influence policy, scale nutrition interventions, and build strong food systems.
               </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Section */}
+      <section id="impact" className="py-24 px-6 bg-[#F4F1EA] text-gray-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-[#1B3C1B] text-4xl md:text-5xl font-extrabold uppercase tracking-tight mb-4">
+              Our Impact in Numbers
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Through the dedication of our team and partners, here is what we have achieved so far.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            
+            {/* Stat 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+              <h3 className="text-5xl font-black text-[#8C926B] mb-3">3500+</h3>
+              <p className="font-semibold text-gray-700">People Reached</p>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+              <h3 className="text-5xl font-black text-[#8C926B] mb-3">1200+</h3>
+              <p className="font-semibold text-gray-700">Young Farmers and Youths Trained</p>
+            </div>
+
+            {/* Stat 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+              <h3 className="text-5xl font-black text-[#8C926B] mb-3">600+</h3>
+              <p className="font-semibold text-gray-700">Nutrition Assessments & Counselling</p>
+            </div>
+
+            {/* Stat 4 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+              <h3 className="text-5xl font-black text-[#8C926B] mb-3">10</h3>
+              <p className="font-semibold text-gray-700">Partnerships and Collaborations</p>
             </div>
 
           </div>
