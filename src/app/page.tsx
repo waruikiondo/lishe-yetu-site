@@ -118,7 +118,7 @@ export default function Home() {
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1556910103-1c02745a872f?q=80&w=800&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" 
                   alt="Food Safety & Education" 
                   fill 
                   className="object-cover group-hover:scale-110 transition duration-500"
@@ -150,7 +150,7 @@ export default function Home() {
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=800&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop" 
                   alt="Partnerships & Advocacy" 
                   fill 
                   className="object-cover group-hover:scale-110 transition duration-500"
