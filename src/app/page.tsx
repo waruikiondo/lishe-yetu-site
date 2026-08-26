@@ -1,18 +1,19 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F4F1EA] text-gray-900 font-sans">
-      
+
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-[#1B3C1B] text-white py-4 px-6 shadow-lg">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="relative h-12 w-12">
-              <Image 
-                src="/logo1.jpeg" 
-                alt="Lishe Yetu Logo" 
-                fill 
+              <Image
+                src="/logo1.jpeg"
+                alt="Lishe Yetu Logo"
+                fill
                 className="object-contain"
               />
             </div>
@@ -22,6 +23,7 @@ export default function Home() {
             <a href="#about" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">About</a>
             <a href="#programs" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">Programs</a>
             <a href="#impact" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">Impact</a>
+            <Link href="/login" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">Patient Portal</Link>
             <button className="bg-[#8C926B] px-6 py-2 rounded-full hover:bg-opacity-90 transition font-bold shadow-md">
               Donate
             </button>
@@ -32,10 +34,10 @@ export default function Home() {
       {/* Hero Section */}
       <header className="relative h-[85vh] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 z-0">
-          <Image 
-            src="/hero.png" 
-            alt="Lishe Yetu Hero" 
-            fill 
+          <Image
+            src="/hero.png"
+            alt="Lishe Yetu Hero"
+            fill
             className="object-cover brightness-[0.40]"
             priority
           />
@@ -69,17 +71,17 @@ export default function Home() {
               Lishe Yetu Initiative is a community-based organisation in Kenya committed to transforming lives through nutrition, food safety and sustainable food systems. We stand at the intersection of health, agriculture and community development.
             </p>
             <p className="text-lg leading-relaxed text-gray-700 font-medium italic border-l-4 border-[#8C926B] pl-4 bg-white p-4 rounded-r-lg shadow-sm">
-              "We envision communities where every individual, every family and every household enjoys nourishment and health through local, safe, nutritious food."
+              &quot;We envision communities where every individual, every family and every household enjoys nourishment and health through local, safe, nutritious food.&quot;
             </p>
             <p className="text-lg leading-relaxed text-gray-700">
               Our mission is to actively engage communities so that everyone has access to safe, nutritious food and the tools to live healthier, more resilient lives.
             </p>
           </div>
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-             <Image 
-              src="/about.jpg" 
-              alt="About Lishe Yetu" 
-              fill 
+            <Image
+              src="/about.jpg"
+              alt="About Lishe Yetu"
+              fill
               className="object-cover"
             />
           </div>
@@ -97,14 +99,14 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-            
+
             {/* Program 1 */}
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
-                <Image 
-                  src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" 
-                  alt="Medically Tailored Meals" 
-                  fill 
+                <Image
+                  src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop"
+                  alt="Medically Tailored Meals"
+                  fill
                   className="object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
@@ -117,14 +119,14 @@ export default function Home() {
             {/* Program 2 */}
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
-                <Image 
-                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" 
-                  alt="Food Safety & Education" 
-                  fill 
+                <Image
+                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop"
+                  alt="Food Safety & Education"
+                  fill
                   className="object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Food Safety & Education</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Food Safety &amp; Education</h3>
               <p className="text-gray-300 leading-relaxed">
                 Through outreach and training, we teach safe food handling, hygiene practices, and contamination prevention in homes, schools, and markets.
               </p>
@@ -133,30 +135,30 @@ export default function Home() {
             {/* Program 3 */}
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
-                <Image 
-                  src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?q=80&w=800&auto=format&fit=crop" 
-                  alt="Livelihoods & Value-Addition" 
-                  fill 
+                <Image
+                  src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?q=80&w=800&auto=format&fit=crop"
+                  alt="Livelihoods & Value-Addition"
+                  fill
                   className="object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Livelihoods & Value-Addition</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Livelihoods &amp; Value-Addition</h3>
               <p className="text-gray-300 leading-relaxed">
-                We support community members—especially women and youth—to add value to local food (packaging, marketing) and create income opportunities.
+                We support community members&mdash;especially women and youth&mdash;to add value to local food (packaging, marketing) and create income opportunities.
               </p>
             </div>
 
             {/* Program 4 */}
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
-                <Image 
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop" 
-                  alt="Partnerships & Advocacy" 
-                  fill 
+                <Image
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop"
+                  alt="Partnerships & Advocacy"
+                  fill
                   className="object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Partnerships & Advocacy</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#8C926B]">Partnerships &amp; Advocacy</h3>
               <p className="text-gray-300 leading-relaxed">
                 Collaborating with local government and NGOs to influence policy, scale nutrition interventions, and build strong food systems.
               </p>
@@ -179,7 +181,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            
+
             {/* Stat 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
               <h3 className="text-5xl font-black text-[#8C926B] mb-3">3500+</h3>
@@ -195,7 +197,7 @@ export default function Home() {
             {/* Stat 3 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
               <h3 className="text-5xl font-black text-[#8C926B] mb-3">600+</h3>
-              <p className="font-semibold text-gray-700">Nutrition Assessments & Counselling</p>
+              <p className="font-semibold text-gray-700">Nutrition Assessments &amp; Counselling</p>
             </div>
 
             {/* Stat 4 */}
@@ -249,7 +251,7 @@ export default function Home() {
             <p className="text-gray-600 font-medium">info@lisheyetu.org</p>
           </div>
         </div>
-        
+
         {/* Bottom Bar */}
         <div className="max-w-7xl mx-auto border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm font-medium">
@@ -257,9 +259,9 @@ export default function Home() {
           </p>
           <p className="text-gray-400 text-sm font-medium">
             Made by{' '}
-            <a 
-              href="https://waki-solutions-portfolio.vercel.app/" 
-              target="_blank" 
+            <a
+              href="https://waki-solutions-portfolio.vercel.app/"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-[#1B3C1B] hover:text-[#8C926B] font-bold transition-colors underline decoration-[#8C926B]/30 underline-offset-4"
             >

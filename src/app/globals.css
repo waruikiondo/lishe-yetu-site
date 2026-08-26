@@ -40,3 +40,31 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* ---- Lishe Yetu patient portal theme ---- */
+:root{
+  --ly-green:#1f411f; --ly-green-dark:#152e15;
+  --ly-gold:#8f8b46; --ly-gold-dark:#726f34;
+  --ly-cream:#f4efe4; --ly-card:#ffffff;
+  --ly-ink:#20302a; --ly-muted:#5f6b60; --ly-line:#e6decb;
+}
+.ly-shell{ min-height:100vh; background:var(--ly-cream); color:var(--ly-ink); }
+.ly-nav{ background:var(--ly-green); color:#fff; }
+.ly-nav a{ color:#e7ecd9; text-decoration:none; }
+.ly-nav a:hover{ color:#fff; }
+.ly-container{ max-width:920px; margin:0 auto; padding:24px 20px; }
+.ly-card{ background:var(--ly-card); border:1px solid var(--ly-line); border-radius:16px; padding:22px; box-shadow:0 1px 3px rgba(0,0,0,.04); }
+.ly-btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; background:var(--ly-gold); color:#fff; border:none; border-radius:999px; padding:11px 20px; font-weight:600; cursor:pointer; font-size:15px; }
+.ly-btn:hover{ background:var(--ly-gold-dark); }
+.ly-btn:disabled{ opacity:.55; cursor:not-allowed; }
+.ly-btn-green{ background:var(--ly-green); }
+.ly-btn-green:hover{ background:var(--ly-green-dark); }
+.ly-btn-outline{ background:transparent; color:var(--ly-green); border:1.5px solid var(--ly-green); }
+.ly-btn-outline:hover{ background:var(--ly-green); color:#fff; }
+.ly-input,.ly-select,.ly-textarea{ width:100%; box-sizing:border-box; padding:11px 13px; border:1px solid var(--ly-line); border-radius:10px; background:#fff; color:var(--ly-ink); font-size:15px; font-family:inherit; }
+.ly-input:focus,.ly-select:focus,.ly-textarea:focus{ outline:2px solid var(--ly-gold); border-color:var(--ly-gold); }
+.ly-label{ display:block; font-weight:600; font-size:14px; margin-bottom:6px; color:var(--ly-green); }
+.ly-field{ margin-bottom:16px; }
+.ly-h1{ font-size:26px; font-weight:800; color:var(--ly-green); margin:0 0 4px; }
+.ly-sub{ color:var(--ly-muted); margin:0 0 20px; }
+.ly-error{ color:#a02020; font-size:14px; }
+.ly-ok{ color:#207a52; font-size:14px; }
