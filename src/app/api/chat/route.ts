@@ -17,7 +17,7 @@ export async function POST(req: Request) {
   if (!key) return NextResponse.json({ reply: 'The AI is not configured yet (missing API key).' })
 
   // Change this to whatever free Flash model AI Studio currently shows you.
-  const model = 'gemini-2.5-flash'
+  const model = 'gemini-3.6-flash'
 
   // Translate our {role:'user'|'assistant'} history into Gemini's format.
   const contents = messages.map((m: { role: string; content: string }) => ({
