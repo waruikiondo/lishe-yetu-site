@@ -26,6 +26,11 @@ export default function AppointmentsPage() {
     const { error } = await supabase.from('appointments').insert({ user_id: user.id, reason, requested_for: when ? new Date(when).toISOString() : null, status: 'requested' })
     setLoading(false)
     if (error) { setOk(false); return setMsg(error.message) }
+    fetch('/api/notify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'appointment', data: { when, reason } }),
+    }).catch(() => {})
     setOk(true); setMsg('Request sent. We will confirm your appointment soon.')
     setReason(''); setWhen(''); load()
   }

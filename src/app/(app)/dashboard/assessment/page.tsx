@@ -33,6 +33,11 @@ export default function AssessmentPage() {
     const { error } = await supabase.from('assessments').insert({ user_id: user.id, answers: { ...f, consent: true }, status: 'submitted' })
     setLoading(false)
     if (error) { setOk(false); return setMsg(error.message) }
+    fetch('/api/notify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'intake', data: { ...f } }),
+    }).catch(() => {})
     setOk(true); setMsg('Thank you. Your intake has been submitted and our team will call you within 1 working day to book your first assessment.')
     setF({ conditions: [], safety: [], meds: [], tried: [], goals: [], interests: [] }); setConsent(false)
   }
