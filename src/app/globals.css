@@ -68,3 +68,39 @@ html {
 .ly-sub{ color:var(--ly-muted); margin:0 0 20px; }
 .ly-error{ color:#a02020; font-size:14px; }
 .ly-ok{ color:#207a52; font-size:14px; }
+/* ---- Responsive app shell ---- */
+.ly-container { box-sizing: border-box; width: 100%; }
+
+.ly-nav-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+.ly-nav .ly-brand { font-weight: 800; font-size: 18px; color: #fff; text-decoration: none; margin-right: auto; }
+.ly-nav-links {
+  order: 5;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 2px;
+}
+.ly-nav-links a { color: #e7ecd9; text-decoration: none; white-space: nowrap; font-size: 15px; }
+.ly-nav-links a:hover { color: #fff; }
+.ly-signout {
+  background: transparent; color: #fff; border: 1.5px solid #fff;
+  border-radius: 999px; padding: 7px 16px; font-weight: 600; font-size: 14px;
+  cursor: pointer; white-space: nowrap;
+}
+.ly-signout:hover { background: rgba(255,255,255,.12); }
+
+@media (min-width: 640px) {
+  .ly-nav-inner { padding: 14px 20px; }
+  .ly-nav .ly-brand { margin-right: 0; }
+  .ly-nav-links { order: 0; width: auto; overflow: visible; margin-right: auto; padding-bottom: 0; }
+}
