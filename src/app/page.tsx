@@ -104,7 +104,7 @@ export default function Home() {
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop"
+                  src="/community-meals.jpeg"
                   alt="Medically Tailored Meals"
                   fill
                   className="object-cover group-hover:scale-110 transition duration-500"
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop"
+                  src="/local-produce.jpeg"
                   alt="Food Safety & Education"
                   fill
                   className="object-cover group-hover:scale-110 transition duration-500"
@@ -136,7 +136,7 @@ export default function Home() {
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
               <div className="relative w-full h-56 mb-6 rounded-xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?q=80&w=800&auto=format&fit=crop"
+                  src="/grains-and-seeds.jpeg"
                   alt="Livelihoods & Value-Addition"
                   fill
                   className="object-cover group-hover:scale-110 transition duration-500"
