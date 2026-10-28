@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+   import PartnerButton from '@/components/PartnerButton';
 
 export default function Home() {
   return (
@@ -217,9 +218,7 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-10">
             Join us in community outreach, setup kitchen gardens, or partner with us. Together, we can build healthier, stronger communities through the power of food.
           </p>
-          <button className="bg-[#1B3C1B] text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-[#8C926B] shadow-2xl transition hover:-translate-y-1">
-            Partner With Us
-          </button>
+                      <PartnerButton className="bg-[#1B3C1B] text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-[#8C926B] shadow-2xl transition hover:-translate-y-1" />
         </div>
       </section>
 
