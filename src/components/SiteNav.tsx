@@ -73,9 +73,8 @@ export default function SiteNav() {
             {/* Patient Portal hidden for now.
             <Link href="/login" onClick={() => setOpen(false)} className="py-1 transition hover:text-[#8C926B]">Patient Portal</Link>
             */}
-            <DonateButton
+                        <DonateButton
               className="mt-2 w-full rounded-full bg-[#8C926B] px-6 py-3 font-bold text-white shadow-md transition hover:bg-[#7a8059]"
-              onOpen={() => setOpen(false)}
             />
           </div>
         </div>
