@@ -1,36 +1,13 @@
 import Image from 'next/image';
-import Link from 'next/link';
-   import PartnerButton from '@/components/PartnerButton';
+import SiteNav from '@/components/SiteNav';
+import PartnerButton from '@/components/PartnerButton';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F4F1EA] text-gray-900 font-sans">
 
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-[#1B3C1B] text-white py-4 px-6 shadow-lg">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="relative h-12 w-12">
-              <Image
-                src="/logo1.jpeg"
-                alt="Lishe Yetu Logo"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <span className="font-bold text-xl tracking-tight hidden md:block uppercase">Lishe Yetu</span>
-          </div>
-          <div className="hidden md:flex gap-8 font-medium items-center">
-            <a href="#about" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">About</a>
-            <a href="#programs" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">Programs</a>
-            <a href="#impact" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">Impact</a>
-            <Link href="/login" className="hover:text-[#8C926B] transition border-b-2 border-transparent hover:border-[#8C926B]">Patient Portal</Link>
-            <button className="bg-[#8C926B] px-6 py-2 rounded-full hover:bg-opacity-90 transition font-bold shadow-md">
-              Donate
-            </button>
-          </div>
-        </div>
-      </nav>
+      {/* Navigation (responsive, with mobile menu) */}
+      <SiteNav />
 
       {/* Hero Section */}
       <header className="relative h-[85vh] flex items-center justify-center text-center text-white">
@@ -44,10 +21,10 @@ export default function Home() {
           />
         </div>
         <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
             Nourishing Communities, <br/>Building Resilience.
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-10 opacity-95 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl font-light mb-10 opacity-95 max-w-2xl mx-auto">
             A registered Community-Based Organization working with communities, schools, and health facilities to strengthen nutrition and support sustainable livelihoods.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -78,7 +55,7 @@ export default function Home() {
               Our mission is to actively engage communities so that everyone has access to safe, nutritious food and the tools to live healthier, more resilient lives.
             </p>
           </div>
-          <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <div className="relative h-[360px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
             <Image
               src="/about.jpg"
               alt="About Lishe Yetu"
@@ -99,7 +76,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
 
             {/* Program 1 */}
             <div className="bg-[#244d24] p-8 rounded-2xl border border-[#ffffff10] hover:border-[#8C926B] transition group shadow-lg flex flex-col">
@@ -218,7 +195,7 @@ export default function Home() {
           <p className="text-xl text-gray-600 mb-10">
             Join us in community outreach, setup kitchen gardens, or partner with us. Together, we can build healthier, stronger communities through the power of food.
           </p>
-                      <PartnerButton className="bg-[#1B3C1B] text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-[#8C926B] shadow-2xl transition hover:-translate-y-1" />
+          <PartnerButton className="bg-[#1B3C1B] text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-[#8C926B] shadow-2xl transition hover:-translate-y-1" />
         </div>
       </section>
 
